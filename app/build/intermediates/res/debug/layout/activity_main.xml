@@ -1,0 +1,109 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.cobaia.MainActivity" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="Digite o primeiro número:"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/primeironum"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="14dp"
+        android:ems="10"
+        android:numeric="decimal" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/primeironum"
+        android:layout_below="@+id/primeironum"
+        android:layout_marginTop="16dp"
+        android:text="Digite o segundo número:"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/segundonum"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="14dp"
+        android:ems="10"
+        android:numeric="decimal" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/btSoma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/segundonum"
+        android:layout_below="@+id/segundonum"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="18dp"
+        android:text="+" 
+        android:background="#FFE4B5"/>
+
+    <Button
+        android:id="@+id/btdivisao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="/"
+        android:background="#FFE4B5"
+        android:layout_alignTop="@+id/button1"
+        android:layout_toRightOf="@+id/btlimpa" />
+
+    <Button
+        android:id="@+id/btSubtracao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:background="#FFE4B5"
+        android:layout_above="@+id/btlimpa"
+        android:layout_toRightOf="@+id/btlimpa" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="X"
+        android:background="#FFE4B5"
+        android:layout_below="@+id/btlimpa"
+        android:layout_alignLeft="@+id/btSoma" />
+
+    <Button
+        android:id="@+id/btlimpa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="C"
+        android:background="#FF0000"
+        android:layout_below="@+id/btSoma"
+        android:layout_toRightOf="@+id/btSoma" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="100px"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/tvResultado"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/btdivisao" />
+
+</RelativeLayout>
+<!-- From: file:/C:/Users/Rafael%20Carlos/StudioProjects/Calculadora/app/src/main/res/layout/activity_main.xml -->
